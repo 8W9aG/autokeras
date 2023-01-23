@@ -281,7 +281,7 @@ class Graph(keras_tuner.HyperModel, serializable.Serializable):
         # Specify hyperparameters from compile(...)
         optimizer_name = hp.Choice(
             "optimizer",
-            ["adam", "sgd", "adam_weight_decay"],
+            ["adam", "sgd"],
             default="adam",
         )
         # TODO: add adadelta optimizer when it can optimize embedding layer on GPU.
